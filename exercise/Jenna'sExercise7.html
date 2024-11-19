@@ -1,0 +1,56 @@
+<html>
+      <title> Jenna's Exercise 7 </title>
+      <head> WELCOME! <br></head>
+<body>
+      <script>
+         function bigSmall(number) {
+            if(number<5){
+            document.write('You like small numbers!<br>') 
+            }  
+            else{
+            document.write('You like big numbers!<br>')
+            }
+          }
+
+         function WelcomeHome(number) {
+            for (var i=0; i<number ; i=i+1) {
+            document.write('Welcome to my home,' + (name) + ' !<br>');
+            }
+          }
+
+
+         function toNumber(number) {
+          for (var i=1; i<=number ; i=i+1) {
+          document.write((i) +'!<br>');
+          }
+         }
+
+
+         function toTable(number) {
+            document.write('<table border=1 , width= 400px>');
+            for (var i=1; i<=number ; i=i+1) {
+            document.write('<tr>');
+            document.write('<td width=200px>'+i+'</td>');
+            document.write('<td width=200px></td>');
+            document.write('</tr>');
+            }
+            document.write('</table>') 
+          }
+
+
+
+            var name = prompt('Enter Your Name:');
+            var number = prompt('Enter Your Favourite Number:');
+
+             bigSmall(number) ;
+             WelcomeHome(number) ;
+             toNumber(number) ;
+             toTable(number) ;
+
+             
+
+
+
+      </script>
+</body>
+</html>
